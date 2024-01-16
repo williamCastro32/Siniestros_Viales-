@@ -24,14 +24,14 @@
 
 - [Introducción](#introducción)
 - [Contexto](#Contexto)
+- [Diccionario](#Diccionario)
 - [Desarrollo](#desarrollo)
     - [ETL - EDA](#ETL-EDA)
 - [Conclusión](#Conclusión)
-- [Fuente_de_datos](#Fuente de datos)
 - [Contacto](#contacto)
 
 - ## **`Links`**
-    - [Carpeta con los dataset](./datasets/)
+    - [Carpeta con los dataset](./Datasets/)
     - [Proceso de ETL](./EDA/)
     - [Proceso de EDA](./ETL/)
 
@@ -51,6 +51,9 @@ En Argentina, cada año mueren cerca de 4.000 personas en siniestros viales. Aun
 Los informes del Sistema Nacional de Información Criminal (SNIC), del Ministerio de Seguridad de la Nación, revelan que entre 2018 y 2022 se registraron 19.630 muertes en siniestros viales en todo el país. Estas cifras equivalen a 11 personas por día que resultaron víctimas fatales por accidentes de tránsito.
 
 Solo en 2022, se contabilizaron 3.828 muertes fatales en este tipo de hechos. Los expertos en la materia indican que en Argentina es dos o tres veces más alta la probabilidad de que una persona muera en un siniestro vial que en un hecho de inseguridad delictiva.
+
+
+# **Diccionario**
 
 <p align="center"><img src="./imagenes/diccionario.png"></p>
 
