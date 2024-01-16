@@ -8,143 +8,141 @@
  
 # <h1 align="center">**`Siniestros viales`**</h1>
 
-¡Bienvenidos al último proyecto individual de la etapa de labs! En esta ocasión, deberán hacer un trabajo situándose en el rol de un ***Data Analyst***.
+<h1 align='center'>
+ <b>William Castro Rojas</b>
+</h1>
+
+<h1 align='center'>
+ <b>***Data Analyst***.</b>
+</h1>
+
 <p align='center'>
 <img src = 'https://static.lajornadaestadodemexico.com/wp-content/uploads/2022/08/Siniestros-viales.jpg' height = 500>
 <p>
 
-## **Descripción del problema -contexto y rol a desarrollar-**
+## **`Tabla de Contenidos`**
 
-Los siniestros viales, también conocidos como accidentes de tráfico o accidentes de tránsito, son eventos que involucran vehículos en las vías públicas y que pueden tener diversas causas, como colisiones entre automóviles, motocicletas, bicicletas o peatones, atropellos, choques con objetos fijos o caídas de vehículos. Estos incidentes pueden tener consecuencias que van desde daños materiales hasta lesiones graves o fatales para los involucrados.
+- [Introducción](#introducción)
+- [Contexto](#Contexto)
+- [Desarrollo](#desarrollo)
+    - [ETL - EDA](#ETL-EDA)
+- [Conclusión](#Conclusión)
+- [Fuente_de_datos](#Fuente de datos)
+- [Contacto](#contacto)
 
-En el contexto de una ciudad como Buenos Aires, los siniestros viales pueden ser una preocupación importante debido al alto volumen de tráfico y la densidad poblacional. Estos incidentes pueden tener un impacto significativo en la seguridad de los residentes y visitantes de la ciudad, así como en la infraestructura vial y los servicios de emergencia.
+- ## **`Links`**
+    - [Carpeta con los dataset](./datasets/)
+    - [Proceso de ETL](./EDA/)
+    - [Proceso de EDA](./ETL/)
 
-Las tasas de mortalidad relacionadas con siniestros viales suelen ser un indicador crítico de la seguridad vial en una región. Estas tasas se calculan, generalmente, como el número de muertes por cada cierto número de habitantes o por cada cierta cantidad de vehículos registrados. Reducir estas tasas es un objetivo clave para mejorar la seguridad vial y proteger la vida de las personas en la ciudad.
 
-Es importante destacar que la prevención de siniestros viales involucra medidas como la educación vial, el cumplimiento de las normas de tráfico, la infraestructura segura de carreteras y calles, así como la promoción de vehículos más seguros. El seguimiento de las estadísticas y la implementación de políticas efectivas son esenciales para abordar este problema de manera adecuada.
+# **Introducción-**
+
+El Observatorio de Movilidad y Seguridad Vial (OMSV), centro de estudios que se encuentra bajo la órbita de la Secretaría de Transporte del Gobierno de la Ciudad Autónoma de Buenos Aires, nos ha encomendado la tarea de realizar un proyecto de análisis de datos. El objetivo de este proyecto es generar información que permita a las autoridades locales tomar medidas efectivas para reducir la cantidad de víctimas fatales en los siniestros viales.
+
+Para llevar a cabo este análisis, contamos con un dataset que proporciona información detallada sobre los homicidios en siniestros viales ocurridos en la Ciudad de Buenos Aires durante el período comprendido entre 2016 y 2021. Este dataset nos brinda una visión amplia de los accidentes de tránsito en la ciudad, incluyendo datos sobre el número y tipo de víctimas, características de los siniestros, y otros factores relevantes.
+
+A través de este informe, nos proponemos analizar en profundidad los patrones y tendencias observados en estos incidentes, con el fin de identificar áreas de mejora y oportunidades para implementar medidas preventivas. Nuestro objetivo final es contribuir a la creación de políticas y acciones que promuevan la seguridad vial y reduzcan la incidencia de accidentes en la Ciudad de Buenos Aires.
 
 
-### **Contexto**
+# **Contexto**
 
 En Argentina, cada año mueren cerca de 4.000 personas en siniestros viales. Aunque muchas jurisdicciones han logrado disminuir la cantidad de accidentes de tránsito, esta sigue siendo la principal causa de muertes violentas en el país.
 Los informes del Sistema Nacional de Información Criminal (SNIC), del Ministerio de Seguridad de la Nación, revelan que entre 2018 y 2022 se registraron 19.630 muertes en siniestros viales en todo el país. Estas cifras equivalen a 11 personas por día que resultaron víctimas fatales por accidentes de tránsito.
 
 Solo en 2022, se contabilizaron 3.828 muertes fatales en este tipo de hechos. Los expertos en la materia indican que en Argentina es dos o tres veces más alta la probabilidad de que una persona muera en un siniestro vial que en un hecho de inseguridad delictiva.
 
-### **Rol a desarrollar**
-
-El `Observatorio de Movilidad y Seguridad Vial` (OMSV), centro de estudios que se encuentra bajo la órbita de la ***Secretaría de Transporte*** del Gobierno de la Ciudad Autónoma de Buenos Aires, nos solicita la elaboración de un proyecto de anális de datos, con el fin de generar información que le permita a las autoridades locales tomar medidas para disminuir la cantidad de víctimas fatales de los siniestros viales.
-Para ello, nos disponibilizan un dataset sobre homicidios en siniestros viales acaecidos en la Ciudad de Buenos Aires durante el periodo 2016-2021. Este dataset se encuentra en formato *xlsx* y contiene dos hojas llamadas: **hechos** y **víctimas**. Asimismo, observarán que incluye otras dos hojas adicionales de diccionarios de datos, que les podrá servir de guía para un mayor entendimiento de la data compartida.
-
-Por su parte, en la sección **Material de apoyo** podrán encontrar más información de interés relativa a los datos disponibilizados y al Observatorio que nos encomienda el trabajo.
+<p align="center"><img src="./imagenes/diccionario.png"></p>
 
 
-## **Propuesta de trabajo -mínimos entregables-**
-*Es importante que a la hora de empezar a desarrollar cada item, y tu demo, te ayudes tambien de la [rúbrica de evaluación](https://github.com/soyHenry/DS_LABS/tree/main/Proyectos/Proyectos%20Individuales/PI03/Data14_Homicidios#lo-que-tendremos-en-cuenta-a-la-hora-de-evaluar).* 😄
-
-`EDA` (Exploratory Data Analysis)
-
-Debes realizar un análisis exploratorio de los datos en un notebook. Tienen que estar tus pasos documentados con claridad, con las conclusiones correspondientes en cada gráfico empleado y análisis de lo que vas observando, utilizando celdas Markdown para tal fin. La prolijidad del notebook será un aspecto a evaluar. Es importante que tengas en cuenta que, en muchas oportunidades y trabajos, un EDA constituye un entregable en sí mismo.
-
-En esta línea, hay varios aspectos indispensables que **deben** ser abordados en cualquier Análisis Exploratorio de Datos y tomaremos como punto de partida para evaluar tu performance en este apartado. Entre estos aspectos destacados se encuentran: *búsqueda de valores faltantes, valores atípicos/extremos u outliers y registros duplicados*. Asimismo, la utilización de gráficos coherentes según la tipología de variable que corresponda resulta esencial.
-
-***En caso de hacer uso de librerías como pandas_profiling, es indispensable acompañar los gráficos con análisis propios.***
+# **Desarrollo**
 
 `Dashboard`
 
-Debe ser funcional y coherente con el storytelling. El dasbhoard tiene que incluir **filtros**, permitiendo explorar detalladamente los datos con la selección de cada uno de ellos. Es decir, es indispensable que sea **interactivo**. También, se espera que el diseño que implementen facilite la interpretación de la información y su análisis, siendo importante, para ello, la claridad en la presentación de los datos, aspectos inherentes a la esteticidad, elección coherente de los gráficos según las variables a visualizar, entre otros ítems. 
+<div style="display: flex; justify-content: center;">
+  <img src="./imagenes/das1.png" style="width: 45%; margin-right: 10px;">
+  <img src="./imagenes/das2.png" style="width: 45%; margin-left: 10px;">
+</div>
+
+Se construyeron dos paneles de control interactivos en la herramienta Power BI. El primero se centra en los siniestros viales y permite visualizar KPIs, el número de víctimas, vehículos acusados y víctimas, así como la ubicación geográfica de los accidentes coloreada por comuna. También muestra las víctimas por año, día de la semana y hora del día, con filtros adicionales por año, tipo de víctima, acusado y comuna.
+
+El segundo panel de control permite una visualización más detallada de la caracterización de las víctimas, incluyendo la edad media, género, rango de edades, roles y días transcurridos desde el accidente hasta el fallecimiento de las víctimas. Este panel también cuenta con filtros por año, tipo de víctima y rol.
 
 `Análisis` :warning:
-
-No se considerará solamente la producción de gráficos con datos -dashboard-, sino también los análisis y conclusiones que puedan extraer a partir de ellos.
+Se detectaron varios indicadores de riesgo. Los días de fin de semana, especialmente en las horas de la madrugada, presentan promedios más altos de siniestros viales. En la mayoría de los casos, las víctimas son motociclistas. Además, el promedio de muertes por hora muestra que las 4 de la mañana tienen el promedio más alto, lo que señala un momento crítico en términos de accidentes viales.
 
 `KPIs`
 
-Debes graficar y medir los 2 KPIs propuestos a continuación, representándolos adecuadamente en el dashboard. A su vez, tambíen tienes que proponer, medir y graficar un tercer KPI que consideres relevante para la temática. 
-Los dos KPIs propuestos son:
 - *Reducir en un 10% la tasa de homicidios en siniestros viales de los últimos seis meses, en CABA, en comparación con la tasa de homicidios en siniestros viales del semestre anterior*.
   
-  Definimos a la **tasa de homicidios en siniestros viales** como el número de víctimas fatales en accidentes de tránsito por cada 100,000 habitantes en un área geográfica durante un período de tiempo específico.
-  Su fórmula es: (Número de homicidios en siniestros viales / Población total) * 100,000
+  <p align="center"><img src="./imagenes/kpi1.png"></p>
+
+  la tasa de homicidios en siniestros viales es el número de víctimas fatales en accidentes de tránsito por cada 100,000 habitantes en un área geográfica durante un período de tiempo específico. 
   
 - *Reducir en un 7% la cantidad de accidentes mortales de motociclistas en el último año, en CABA, respecto al año anterior*.
   
-  Definimos a la **cantidad de accidentes mortales de motociclistas en siniestros viales** como el número absoluto de accidentes fatales en los que estuvieron involucradas víctimas que viajaban en moto en un determinado periodo temporal.
-  Su fórmula para medir la evolución de los accidentes mortales con víctimas en moto es: (Número de accidentes mortales con víctimas en moto en el año anterior - Número de accidentes mortales con víctimas en moto en el año actual) / (Número de accidentes mortales con víctimas en moto en el año anterior) * 100
+    <p align="center"><img src="./imagenes/kpi2.png"></p>
+
+  Se definimos a la cantidad de accidentes mortales de motociclistas en siniestros viales como el número absoluto de accidentes fatales en los que estuvieron involucradas víctimas que viajaban en moto en un determinado periodo temporal.
+
+- *Matener las horas promedio en que hay un siniestro por encima de 114 horas*
+
+  <p align="center"><img src="./imagenes/kpi3.png"></p>
+
+  Se define con las horas medias entre siniestris en un tiempo determinado en este caso es por año
+
+## ETL - EDA
+
+`ETL`
 
 
-  
+Se realizaron las siguientes etapas en el proceso de Extracción, Transformación y Carga (ETL):
 
-`MUY IMPORTANTE` repasar qué es un KPI y cómo se diferencia de una métrica convencional. En el material de apoyo tienen lectura que puede ser de ayuda.</small>
+- Extracción: Los archivos con extensión .xlsx fueron cargados utilizando Visual Studio Code con Python. Se emplearon las librerías Pandas, NumPy y re para el tratamiento de datos.
 
-`Repositorio de GitHub`
+- Transformación: Se visualizó la información y se identificaron filas con valores 'SD', que indican datos faltantes. Dado que su proporción en comparación con los datos válidos era mínima, se utilizó la media y la moda como métodos estadísticos para imputar los datos faltantes en cada caso. Se verificaron duplicados, se formatearon las columnas y se aseguró que no hubiera datos nulos ni con la palabra 'SD'. Durante este proceso, se eliminó una fila que contenía solo tres datos, ya que no se consideró relevante y su eliminación no afectaba significativamente el análisis.
 
-El repositorio debe contener un **Readme** principal donde presenten, en una primera instancia, de forma general **su proyecto** y detallen qué hay en cada archivo/carpeta del propio repositorio. Este Readme no puede ser el mismo de la consigna que nosotros les entregamos.
-A su vez, el Readme debe incluir un **reporte de análisis con base en sus dashboards**, así como el análisis y la funcionalidad de los KPIs sugeridos.
+- Carga: Finalmente, los datos procesados se exportaron a un archivo CSV.
 
-### _**Desafíate y no te quedes siendo Junior, sé Junior Advanced**_
+Este proceso garantizó la integridad y consistencia de los datos, así como su preparación para su posterior análisis.
 
-Pensando en alcanzar tu Boom 🚀, te recomendamos incorporar los siguientes desafíos para tener un portfolio mucho más completo y competitivo:
 
-- Crear una base de datos en un motor SQL, ingestar el dataset procesado y utilizarla como fuente de datos de su dashboard en Power BI (o la herramienta de visualización que utilice).
-- Ejecutar scripts de Python en la herramienta de visualización de datos escogida.
-- Cruce de datos con datasets complementarios, ya sea para obtener información nueva o poder comparar la información disponible para todas las plataformas. 
+`EDA`
 
-<sub> Nota: la realización de uno o más de estos ítems no es intercambiable con los requerimientos mínimos establecidos en la sección anterior "Propuesta de trabajo". Empiece con esta sección una vez haya cumplido con los requerimientos mínimos, a modo de desafiarse a usted mismo y destacar frente al resto.</sub>
+Para el análisis exploratorio de datos (EDA), se utilizaron los conjuntos de datos procesados y limpios obtenidos del proceso ETL. Se inició verificando la composición de las columnas mediante un método .describe(include='all'). Se identificaron los valores más frecuentes (top) tanto para víctimas como para acusados, los cuales fueron estudiados en detalle posteriormente.
 
-## Fuente de datos
-**Obligatorio:**
+Se procedió a analizar la presencia de posibles valores atípicos (outliers) en las columnas de longitud y latitud para verificar la correcta referencia geográfica, considerando que los datos se limitan a una única ciudad. Se esperaba que estos datos geográficos estuvieran cercanos entre sí.
+
+También se examinó la columna N_VICTIMAS en busca de posibles valores atípicos, encontrando uno con 3 víctimas. Este caso se investigó con mayor detalle y se descubrió que correspondía a un accidente ocurrido a las 5 de la mañana, donde un automóvil impactó contra un objeto fijo.
+
+Se procedió entonces a analizar si existía alguna relación entre los días de la semana, la hora del día y el número de víctimas. Se identificó inicialmente un leve aumento los fines de semana, especialmente los viernes. Se verificaron estas tendencias para los días viernes, sábado y domingo en relación con las horas de los accidentes, encontrando que el pico más alto se presentaba los domingos entre las 5 y las 7 de la mañana.
+
+Además, se realizó un análisis más detallado por tipo de víctima y acusado. Se identificó que los acusados en esos días y horas eran principalmente automóviles y objetos fijos, mientras que las víctimas en su mayoría eran motociclistas y peatones. Estos hallazgos proporcionan una visión detallada de la dinámica de los accidentes viales en los días y horarios específicos mencionados.
+
+# **Conclusión**
+
+
+Después de realizar el análisis de datos y crear los dashboards, se puede concluir lo siguiente:
+
+Al revisar la gráfica de accidentes por año, se observa que el año 2020 tuvo la menor cantidad de accidentes. Esto podría asociarse con la época de la pandemia, cuando las aglomeraciones no estaban permitidas. Por lo tanto, se podría inferir que las reuniones nocturnas y sus actividades asociadas, como el consumo de alcohol y la falta de descanso, podrían ser factores que contribuyeron a un aumento en la tasa de homicidios viales en 2021 y años anteriores, excluyendo el 2020.
+
+Este análisis se respalda con los promedios más altos de accidentes en días específicos, siendo los domingos el día con el promedio más alto. Además, el hecho de que los objetos fijos sean el segundo tipo de acusado en estos días y horarios sugiere la posibilidad de microsueños o falta de conciencia por parte de los conductores.
+
+Es importante tener en cuenta que estas conclusiones se basan en supuestos y que cualquier recomendación para abordar esta problemática debería ser respaldada por un análisis más detallado y específico de cada situación.
+
+Es importante destacar que este trabajo tiene fines educativos y busca demostrar las capacidades de análisis de datos del creador del contenido para el bootcamp de Henry.
+
 
 - [Buenos Aires Data](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales): deberán utilizar el dataset denominado `Homicidios`
 
-**Complementarios:**
-- [Buenos Aires Data](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales): pueden usar el dataset de `Lesiones`
-- Cualquier dataset de búsqueda propia que complemente y mejore el análisis. Recuerde el uso de [APIs y WebScrapping](https://www.students.soyhenry.com/classes/95?cohortId=124&videoOrdinal=2)
 
-<h1>Lo que tendremos en cuenta a la hora de evaluar</h1>
+## Contacto
 
-Serás evaluado en dos grandes áreas  `Tech` y `Soft`!
-
-Ambas con igual peso entre si y ambas deben ser aprobatorias para tener la calidad de aprobado en este PIDA. Ten presente que una nota minima para aprobar significa tener TODOS los items como "Bueno" 👌
-A continuacion te facilitamos nuevamente la [rúbrica de evaluación](https://docs.google.com/spreadsheets/d/e/2PACX-1vTV3zL1aeGRlbXkiy5012GWbDBMseA4iziMXs597TZfgaYgazjxZDx_-q6L4s9io3JW4UPHcZs_XNyz/pubhtml) con la que seras evaluado por tu corrector@. Recuerda que el feedback de tu corrector@ no es en ningun momento un indicativo de tu nota. Si tienes alguna duda durante tu DEMO, pidele a tu corrector@ que te aclare claramente cuales son los objetivos de aprendizaje no cumplidos.
-
-Esperamos que te sirva de guia de aprendizaje, y recuerda que no se trata solo de cumplir requisitos, sino de destacar en cada nivel 🚀 💛
-
-
-## Material de apoyo
-- [Notas para el uso del dataset de homicidios de siniestros viales de la CABA](https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/victimas-siniestros-viales/NOTAS_HOMICIDIOS_SINIESTRO_VIAL.pdf)
-- [Observatorio de Movilidad y Seguridad Vial de la Ciudad Autónoma de Buenos Aires](https://buenosaires.gob.ar/observatorio-de-movilidad-y-seguridad-vial)
-
-
-#### Tech
-- [Repaso de clase sobre EDA](https://www.students.soyhenry.com/classes/100?cohortId=106&videoOrdinal=1)
-- [Code Review: **Interactividad** Dashboard, Patron Z, **Tooltips**](https://www.students.soyhenry.com/classes/93?cohortId=124&videoOrdinal=2)
-- [KPI's 4 students](https://docs.google.com/document/d/1DI0ZVgHfOfjgnXGhi8jEKzwCIjtUdgRUDe-qiiGGq8E/edit)
-- [Code Review: DAX y **medidas calculadas**](https://www.students.soyhenry.com/classes/96?cohortId=124&videoOrdinal=2)
-
-#### Soft
-- ¡Todos los Workshops de esta etapa serán de gran utilidad para tener un proyecto exitoso!
-
-
-
-
-## ***Recomendaciones finales***
-
-¡No debes mostrar nada de código en la exposición! Te recomendamos el workshop *From Data to Viz* para que te quede más claro la dinámica y lo que se espera de tu demo.
-
-Recordamos que sean puntuales y prueben el correcto funcionamiento de las herramientas empleadas ***antes*** de ingresar a la meet.
-
-La **DEMO**, donde defenderás tu proyecto, se realizará el día jueves o viernes. Debes estar atent@ a tu *calendar* para ver qué día y horario te corresponde. 
-
-Tendrá una duración total máxima de 30 minutos, de los cuales **sólo 10 minutos serán para su presentación**.  Es importante que sepa **gestionar bien tu tiempo** y tenga un speech ya preparado de 10 minutos, ya que el tiempo restante será dedicado a la corrección, revisión de repositorio y feedback por parte del Henry Mentor.
-
-
-
-## Disclaimer
-De parte del equipo de Henry se quiere aclarar y remarcar que los fines de los proyectos propuestos son exclusivamente pedagógicos, con el objetivo de realizar proyectos que simulen un entorno laboral, en el cual se trabajen diversas temáticas ajustadas a la realidad. No reflejan necesariamente la filosofía y valores de la organización. Además, Henry no alienta ni tampoco recomienda a los alumnos y/o cualquier persona leyendo los repositorios (y entregas de proyectos) que tomen acciones en base a los datos que pudieran o no haber recabado. Toda la información expuesta y resultados obtenidos en los proyectos nunca deben ser tomados en cuenta para la toma real de decisiones (especialmente en la temática de finanzas, salud, política, etc.).
-  
-  
-<p align='center'>
-<img src ="https://media.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif" height=250>
-<p>
-
+<div style="display: flex; align-items: center;">
+  <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile.com/" style="margin-right: 10px;">
+    <img src="./imagenes/in_logo.png" alt="LinkedIn" width="42" height="42">
+  </a>
+  <a href="mailto:willcr32@gmail.com" style="margin-right: 10px;">
+    <img src="./imagenes/gmail_logo.png" alt="Gmail" width="42" height="42">
+  </a>
+</div>
