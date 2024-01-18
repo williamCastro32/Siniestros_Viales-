@@ -63,15 +63,20 @@ Solo en 2022, se contabilizaron 3.828 muertes fatales en este tipo de hechos. Lo
 `Dashboard`
 
 <div style="display: flex; justify-content: center;">
-  <img src="./imagenes/das1.png" style="width: 45%; margin-right: 10px;">
-  <img src="./imagenes/das2.png" style="width: 45%; margin-left: 10px;">
+  <img src="./imagenes/das1.png" style="width: 30%; margin-right: 10px;">
+  <img src="./imagenes/das2.png" style="width: 30%; margin-left: 10px;">
+  <img src="./imagenes/das3.png" style="width: 30%; margin-left: 10px;">
 </div>
 
-Se construyeron dos paneles de control interactivos en la herramienta Power BI. El primero se centra en los siniestros viales y permite visualizar KPIs, el número de víctimas, vehículos acusados y víctimas, así como la ubicación geográfica de los accidentes coloreada por comuna. También muestra las víctimas por año, día de la semana y hora del día, con filtros adicionales por año, tipo de víctima, acusado y comuna.
+Se desarrollaron tres paneles de control interactivos utilizando Power BI. Se utilizaron tres tablas, dos importadas desde archivos CSV y una desde una base de datos MySQL.
 
-El segundo panel de control permite una visualización más detallada de la caracterización de las víctimas, incluyendo la edad media, género, rango de edades, roles y días transcurridos desde el accidente hasta el fallecimiento de las víctimas. Este panel también cuenta con filtros por año, tipo de víctima y rol.
+El primer panel se enfoca en los siniestros viales y proporciona un contexto general de los accidentes en la Ciudad Autónoma de Buenos Aires (CABA). En este panel, se pueden visualizar el número de víctimas en los siniestros, comparándolo con la cantidad de accidentes y lesionados en la ciudad. Además, se presentan los indicadores clave de rendimiento (KPI) con sus respectivos objetivos y cumplimientos, así como también se incluye una comparación de los últimos tres años en cuanto a la cantidad de lesionados y víctimas fatales. Este panel es interactivo y cuenta con filtros y herramientas para ampliar la información de las gráficas.
 
-`Análisis` :warning:
+El segundo panel muestra los aspectos espaciales de los siniestros viales. Permite visualizar la cantidad de víctimas por año, trimestre y mes, así como también las víctimas y acusados según el tipo de vehículo involucrado. Incluye un mapa que muestra las ubicaciones geográficas (latitud y longitud) de los accidentes, coloreadas según una columna que representa el número de víctimas. También presenta información sobre las horas con el promedio y la cantidad de víctimas de acuerdo con la hora del día y el día de la semana. Este panel también es interactivo y ofrece filtros y herramientas para explorar los datos en detalle.
+
+El tercer panel se centra en la información demográfica de las víctimas. Ofrece detalles como la edad promedio de las víctimas, el género de las mismas, la relación entre el género y el tipo de vehículo involucrado en el accidente, los días transcurridos desde el accidente hasta el fallecimiento de las víctimas, y el rango de edad de las mismas.
+
+`Análisis` 
 Se detectaron varios indicadores de riesgo. Los días de fin de semana, especialmente en las horas de la madrugada, presentan promedios más altos de siniestros viales. En la mayoría de los casos, las víctimas son motociclistas. Además, el promedio de muertes por hora muestra que las 4 de la mañana tienen el promedio más alto, lo que señala un momento crítico en términos de accidentes viales.
 
 `KPIs`
@@ -125,15 +130,17 @@ Además, se realizó un análisis más detallado por tipo de víctima y acusado.
 # **Conclusión**
 
 
-Después de realizar el análisis de datos y crear los dashboards, se puede concluir lo siguiente:
+Después de analizar los datos y crear los dashboards, se puede concluir lo siguiente:
 
-Al revisar la gráfica de accidentes por año, se observa que el año 2020 tuvo la menor cantidad de accidentes. Esto podría asociarse con la época de la pandemia, cuando las aglomeraciones no estaban permitidas. Por lo tanto, se podría inferir que las reuniones nocturnas y sus actividades asociadas, como el consumo de alcohol y la falta de descanso, podrían ser factores que contribuyeron a un aumento en la tasa de homicidios viales en 2021 y años anteriores, excluyendo el 2020.
+La gráfica de accidentes por año muestra que en 2020 se registró la menor cantidad de accidentes. Esto podría estar relacionado con las restricciones de la pandemia, que limitaron las aglomeraciones. Se podría inferir que las reuniones nocturnas, el consumo de alcohol y la falta de descanso contribuyeron al aumento de la tasa de homicidios viales en 2021 y años anteriores, excluyendo 2020.
 
-Este análisis se respalda con los promedios más altos de accidentes en días específicos, siendo los domingos el día con el promedio más alto. Además, el hecho de que los objetos fijos sean el segundo tipo de acusado en estos días y horarios sugiere la posibilidad de microsueños o falta de conciencia por parte de los conductores.
+Estos hallazgos se respaldan con los promedios más altos de accidentes en días específicos, siendo los domingos el día con el promedio más alto. Además, el hecho de que los objetos fijos sean el segundo tipo de acusado en estos días y horarios sugiere la posibilidad de microsueños o falta de conciencia por parte de los conductores.
 
-Es importante tener en cuenta que estas conclusiones se basan en supuestos y que cualquier recomendación para abordar esta problemática debería ser respaldada por un análisis más detallado y específico de cada situación.
+Se recomienda tomar medidas que concienticen a los conductores sobre la importancia de no conducir bajo los efectos del alcohol, la peligrosidad de los microsueños y la importancia de mantenerse alerta al volante. También se sugiere verificar la visibilidad de las señales de tránsito durante la noche y reforzar los controles durante los días y horas identificados con mayor número de casos para asi cumplir con los objetivos.
 
-Es importante destacar que este trabajo tiene fines educativos y busca demostrar las capacidades de análisis de datos del creador del contenido para el bootcamp de Henry.
+Es fundamental tener en cuenta que estas conclusiones se basan en un análisis general y que cualquier recomendación específica debe respaldarse con un análisis más detallado de cada situación.
+
+Finalmente, es importante destacar que este trabajo tiene fines educativos y busca demostrar las habilidades de análisis de datos del autor para el bootcamp de Henry.
 
 
 - [Buenos Aires Data](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales): deberán utilizar el dataset denominado `Homicidios`
