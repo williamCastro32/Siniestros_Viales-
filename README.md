@@ -20,7 +20,7 @@
 <img src = 'https://static.lajornadaestadodemexico.com/wp-content/uploads/2022/08/Siniestros-viales.jpg' height = 500>
 <p>
 
-
+## **`Tabla de Contenidos`**
   
   - [Introducción](#introducción)
   - [Contexto](#Contexto)
@@ -114,7 +114,7 @@ Se detectaron varios indicadores de riesgo. Los días de fin de semana, especial
   <summary><h2>ETL-EDA</h2></summary>
 
 
-[**ET**](/ETL/)
+[**ETL**](/ETL/)
 
 Se realizaron las siguientes etapas en el proceso de Extracción, Transformación y Carga (ETL):
 
