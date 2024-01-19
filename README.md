@@ -20,20 +20,22 @@
 <img src = 'https://static.lajornadaestadodemexico.com/wp-content/uploads/2022/08/Siniestros-viales.jpg' height = 500>
 <p>
 
-## **`Tabla de Contenidos`**
-
-- [Introducción](#introducción)
-- [Contexto](#Contexto)
-- [Diccionario](#Diccionario)
-- [Desarrollo](#desarrollo)
-    - [ETL - EDA](#ETL-EDA)
-- [Conclusión](#Conclusión)
-- [Contacto](#contacto)
-
-- ## **`Links`**
+<details>
+  <summary><h2>Tabla de Contenidos</h2></summary>
+  
+  - [Introducción](#introducción)
+  - [Contexto](#Contexto)
+  - [Diccionario](#Diccionario)
+  - [Desarrollo](#desarrollo)
+    - [ETL-EDA](#ETL-EDA)
+  - [Conclusión](#Conclusión)
+  - [Contacto](#contacto)
+  
+  - **Links**
     - [Carpeta con los dataset](./Datasets/)
-    - [Proceso de ETL](./EDA/)
-    - [Proceso de EDA](./ETL/)
+    - [Proceso de ETL](./ETL/)
+    - [Proceso de EDA](./EDA/)
+</details>
 
 
 # **Introducción-**
@@ -99,10 +101,9 @@ Se detectaron varios indicadores de riesgo. Los días de fin de semana, especial
 
   Se define con las horas medias entre siniestris en un tiempo determinado en este caso es por año
 
-## ETL - EDA
+# **ETL-EDA**
 
-`ETL`
-
+- [**Etl**](/ETL/)
 
 Se realizaron las siguientes etapas en el proceso de Extracción, Transformación y Carga (ETL):
 
@@ -115,7 +116,8 @@ Se realizaron las siguientes etapas en el proceso de Extracción, Transformació
 Este proceso garantizó la integridad y consistencia de los datos, así como su preparación para su posterior análisis.
 
 
-`EDA`
+
+- [**EDA**](/EDA/) 
 
 Para el análisis exploratorio de datos (EDA), se utilizaron los conjuntos de datos procesados y limpios obtenidos del proceso ETL. Se inició verificando la composición de las columnas mediante un método .describe(include='all'). Se identificaron los valores más frecuentes (top) tanto para víctimas como para acusados, los cuales fueron estudiados en detalle posteriormente.
 
@@ -143,7 +145,7 @@ Es fundamental tener en cuenta que estas conclusiones se basan en un análisis g
 Finalmente, es importante destacar que este trabajo tiene fines educativos y busca demostrar las habilidades de análisis de datos del autor para el bootcamp de Henry.
 
 
-- [Buenos Aires Data](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales): deberán utilizar el dataset denominado `Homicidios`
+- [Buenos Aires Data](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales): Dataset utilizado `Homicidios`
 
 
 ## Contacto
