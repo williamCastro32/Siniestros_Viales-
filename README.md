@@ -20,14 +20,13 @@
 <img src = 'https://static.lajornadaestadodemexico.com/wp-content/uploads/2022/08/Siniestros-viales.jpg' height = 500>
 <p>
 
-<details>
-  <summary><h2>Tabla de Contenidos</h2></summary>
+
   
   - [Introducción](#introducción)
   - [Contexto](#Contexto)
   - [Diccionario](#Diccionario)
   - [Desarrollo](#desarrollo)
-    - [ETL-EDA](#ETL-EDA)
+  - [ETL-EDA](#ETL-EDA)
   - [Conclusión](#Conclusión)
   - [Contacto](#contacto)
   
@@ -35,7 +34,7 @@
     - [Carpeta con los dataset](./Datasets/)
     - [Proceso de ETL](./ETL/)
     - [Proceso de EDA](./EDA/)
-</details>
+
 
 <details>
   <summary><h2>Introducción</h2></summary>
@@ -48,9 +47,6 @@ Para llevar a cabo este análisis, contamos con un dataset que proporciona infor
 A través de este informe, nos proponemos analizar en profundidad los patrones y tendencias observados en estos incidentes, con el fin de identificar áreas de mejora y oportunidades para implementar medidas preventivas. Nuestro objetivo final es contribuir a la creación de políticas y acciones que promuevan la seguridad vial y reduzcan la incidencia de accidentes en la Ciudad de Buenos Aires.
 
 </details>
-
-
-
 
 <details>
   <summary><h2>Contexto</h2></summary>
@@ -67,7 +63,9 @@ Solo en 2022, se contabilizaron 3.828 muertes fatales en este tipo de hechos. Lo
 <p align="center"><img src="./imagenes/diccionario.png"></p>
 
 
-# **Desarrollo**
+
+<details>
+  <summary><h2>Desarrollo</h2></summary>
 
 `Dashboard`
 
@@ -108,9 +106,15 @@ Se detectaron varios indicadores de riesgo. Los días de fin de semana, especial
 
   Se define con las horas medias entre siniestris en un tiempo determinado en este caso es por año
 
-# **ETL-EDA**
+</details>
 
-- [**Etl**](/ETL/)
+
+
+<details>
+  <summary><h2>ETL-EDA</h2></summary>
+
+
+[**ET**](/ETL/)
 
 Se realizaron las siguientes etapas en el proceso de Extracción, Transformación y Carga (ETL):
 
@@ -124,7 +128,7 @@ Este proceso garantizó la integridad y consistencia de los datos, así como su 
 
 
 
-- [**EDA**](/EDA/) 
+[**EDA**](/EDA/) 
 
 Para el análisis exploratorio de datos (EDA), se utilizaron los conjuntos de datos procesados y limpios obtenidos del proceso ETL. Se inició verificando la composición de las columnas mediante un método .describe(include='all'). Se identificaron los valores más frecuentes (top) tanto para víctimas como para acusados, los cuales fueron estudiados en detalle posteriormente.
 
@@ -135,6 +139,8 @@ También se examinó la columna N_VICTIMAS en busca de posibles valores atípico
 Se procedió entonces a analizar si existía alguna relación entre los días de la semana, la hora del día y el número de víctimas. Se identificó inicialmente un leve aumento los fines de semana, especialmente los viernes. Se verificaron estas tendencias para los días viernes, sábado y domingo en relación con las horas de los accidentes, encontrando que el pico más alto se presentaba los domingos entre las 5 y las 7 de la mañana.
 
 Además, se realizó un análisis más detallado por tipo de víctima y acusado. Se identificó que los acusados en esos días y horas eran principalmente automóviles y objetos fijos, mientras que las víctimas en su mayoría eran motociclistas y peatones. Estos hallazgos proporcionan una visión detallada de la dinámica de los accidentes viales en los días y horarios específicos mencionados.
+
+</details>
 
 # **Conclusión**
 
